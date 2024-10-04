@@ -1,6 +1,6 @@
 # Dataset Analysis
 
-## Task 2: Analysis Overview
+## Exercise Project 1
 
 ### 1. Target Variable Distribution
 - **Mushroom Dataset**: Balanced distribution (optimal for classification).
