@@ -4,25 +4,25 @@
 
 ### 1. Target Variable Distribution
 
-- **Mushroom Dataset**: The target variable shows a balanced distribution between edible and poisonous mushrooms. This balance is essential for our classification tasks
+- **Mushroom Dataset**: A balanced distribution of both poisonous and edible mushrooms is displayed by the target variable
 
-- **VGChartz Dataset**: The `total_sales` variable reveals a right-skewed distribution. This skew could complicate regression modeling by leading to biased predictions
+- **VGChartz Dataset**: A right-skewed distribution is shown by the `total_sales` variable. ⁤⁤Regression modeling may become more difficult as a result of this skew's biased predictions
 
 ### 2. Independent Variable Distributions
 
-- **Mushroom Dataset**: The independent variables vary in their distributions, with some categories being more common than others. This variation is important as it can influence the model performance
+- **Mushroom Dataset**: The distribution of the independent variables differ, with certain categories having a higher frequency than others. This variance may have an impact on the model's functionality
 
-- **VGChartz Dataset**: The numerical features generally exhibit balanced distributions, though a few show slight skewness. Understanding these distributions is crucial for appropriate data transformation
+- **VGChartz Dataset**: Most of the numerical features have balanced distributions, however a small number have mild skewness
 
 ### 3. Overlapping Data and Noise
 
-- **Mushroom Dataset**: While there are a few outliers, they are manageable. Overall, the dataset appears relatively clean, with no significant contradictions between features
+- **Mushroom Dataset**: The outliers are present but not too many. Overall, the dataset appears relatively clean, with no significant contradictions between features
 
-- **VGChartz Dataset**: There are notable outliers in the `total_shipped` feature. These outliers may introduce noise and complicate our predictive modeling efforts
+- **VGChartz Dataset**: The `total_shipped` feature contains a few noteworthy outliers. These anomalie have the potential to add noise and make our predictive modeling more difficult
 
 ### 4. Redundancy
 
-- **Mushroom Dataset**: Some features, such as `cap-color` and `gill-color`, may be redundant. Identifying and possibly removing these redundant features could simplify this model without sacrificing its performance
+- **Mushroom Dataset**: There may be duplication in some features, like `cap-color` and `gill-color`. It would be possible to simplify this model without compromising its functionality
 
 - **VGChartz Dataset**: There is a high correlation between `vgchartz_score` and `critic_score`, indicating potential redundancy. It may be beneficial to eliminate one of these features in future analyses
 
@@ -34,7 +34,7 @@
   
 ### 6. Significant Outliers
 
-- **Mushroom Dataset**: Although a few outliers exist, they are not significant enough to affect the overall analysis
+- **Mushroom Dataset**: A few outliers are present, but not enough to have an impact on the analysis
 
 - **VGChartz Dataset**: The significant outliers in `total_shipped` are concerning. We need to address these outliers to ensure accurate modeling
 
@@ -42,4 +42,4 @@
 
 - **Mushroom Dataset**: Combining similar categorical features could help reduce dimensionality and enhance model performance
 
-- **VGChartz Dataset**: Creating a combined score from `vgchartz_score` and `critic_score` might provide a more comprehensive perspective on game performance
+- **VGChartz Dataset**: Combining `vgchartz_score` and `critic_score` to get a combined score could offer a more thorough analysis of game performance
