@@ -4,21 +4,21 @@
 
 ### 1. Target Variable Distribution
 
-- **Mushroom Dataset**: A balanced distribution of both poisonous and edible mushrooms is displayed by the target variable
+- **Mushroom Dataset**: Both edible and poisonous mushrooms are present in comparable amounts, indicating a fairly balanced target variable
 
-- **VGChartz Dataset**: A right-skewed distribution is shown by the `total_sales` variable. ⁤⁤Regression modeling may become more difficult as a result of this skew's biased predictions
-
+- **VGChartz Dataset**: The skewed `total_sales` variable indicates that most games have lower sales while only a small number have extremely high numbers. This skew may make forecasting more difficult
+  
 ### 2. Independent Variable Distributions
 
-- **Mushroom Dataset**: The distribution of the independent variables differ, with certain categories having a higher frequency than others. This variance may have an impact on the model's functionality
+- **Mushroom Dataset**: The model's performance may be impacted by the independent variables' disparate distributions, which show that some categories are far more common than others
 
-- **VGChartz Dataset**: Most of the numerical features have balanced distributions, however a small number have mild skewness
+- **VGChartz Dataset**: A few numbers appear slightly skewed, but most numerical features appear to be roughly balanced
 
 ### 3. Overlapping Data and Noise
 
-- **Mushroom Dataset**: The outliers are present but not too many. Overall, the dataset appears relatively clean, with no significant contradictions between features
-
-- **VGChartz Dataset**: The `total_shipped` feature contains a few noteworthy outliers. These anomalie have the potential to add noise and make our predictive modeling more difficult
+- **Mushroom Dataset**: Not too many outliers, but a few do exist. All things considered, the dataset is clear and free of significant feature inconsistencies
+  
+- **VGChartz Dataset**: There are a few notable outliers in the `total_shipped` feature. These might increase noise and complicate the process of creating an accurate model
 
 ### 4. Redundancy
 
